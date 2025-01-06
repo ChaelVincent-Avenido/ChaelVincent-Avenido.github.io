@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store - Products</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+  <div class="logo">
+    <h1>
+        <i class="fas fa-shopping-cart"></i> V&A Music Store
+    </h1>
+</div>
+     <nav>
+
+
+  <div class="navbar">
+
+    <div class="navbar-links">
+      <a href="index.html"class="active"><i class="fas fa-home"></i> Home</a> 
+      <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+    </div>
+    <div class="icon" onclick="toggleMenu()"> 
+      &#9776; 
+    </div>
+  </div>
+</nav>
+    </header>
+ <br>
+<br>
+<br>
+ 
+
+    <main>
+          <form class="search-bar" method="get">
+        <input type="text" name="query" placeholder="Search for products...">
+        <button type="submit">Search</button>
+    </form>
+    <br>
+      <h2>V&A Guitars</h2>
+        <section class="guitar-product-gallery">
+            <div class="guitar-product">
+                <img src="Gibson acoustic.jpg" alt="Gibson Acoustic Guitar">
+                <h3>Gibson Acoustic Guitar</h3>
+                <p class="price">Price: $500</p>
+                <p class="rating">Rating: ★★★★☆</p>
+              <p class="info">Premium Acoustic Guitar</p>
+   <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+ 
+
+             <div class="guitar-product">
+                <img src="Yamaha acoustic.jpg" alt="Yamaha Acoustic Guitar">
+                <h3>Yamaha Acoustic Guitar</h3>
+                <p class="price">Price: $500</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Quality Acoustic Guitar</p>
+    <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+        
+        
+        
+        
+
+            <div class="guitar-product">
+                <img src="Fender acoustic.jpg" alt="Fender Acoustic Guitar">
+                <h3>Fender Acoustic Guitar</h3>
+                <p class="price">Price: $500</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Popular Acoustic Model</p>
+     <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+             <div class="guitar-product">
+                <img src="Fender electric.jpg" alt="Fender Acoustic Guitar">
+                <h3>Fender Electric Guitar</h3>
+                <p class="price">Price:299.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Classic Electric Model.</p>
+      <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+               <div class="guitar-product">
+                <img src="Ibanez electric.jpg" alt="Fender Acoustic Guitar">
+                <h3>Ibanez Electric Guitar</h3>
+                <p class="price">Price:299.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Versatile Electric Guitar.</p>
+       <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+               <div class="guitar-product">
+                <img src="Gibson electric.jpg" alt="Fender Acoustic Guitar">
+                <h3>Gibson Electric Guitar</h3>
+                <p class="price">Price:299.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Iconic electric guitar.</p>
+        <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+        
+            
+               <div class="guitar-product">
+                <img src="Mahalo.jpg" alt="Fender Acoustic Guitar">
+                <h3>Mahalo Ukulele</h3>
+                <p class="price">Price:99.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Affordable ukulele perfect for beginners.</p>
+         <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+            
+               <div class="guitar-product">
+                <img src="Kala.jpg" alt="Fender Acoustic Guitar">
+                <h3>Kala Ukulele</h3>
+                <p class="price">Price:99.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Offers bright sound and excellent build quality.</p>
+          <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+               <div class="guitar-product">
+                <img src="Linakai.jpg" alt="Fender Acoustic Guitar">
+                <h3>Linakai Ukulele</h3>
+                <p class="price">Price:99.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Geat tone and easy to play for all skill levels.</p>
+           <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+                 <div class="guitar-product">
+                <img src="Bass Guitar.jpg" alt="Fender Acoustic Guitar">
+                <h3>Yamaha Bass Guitar</h3>
+                <p class="price">Price:399.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Deep Sound.</p>
+            <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+               <div class="guitar-product">
+                <img src="Ibanez Bass.jpg" alt="Fender Acoustic Guitar">
+                <h3>Ibanez Bass Guitar</h3>
+                <p class="price">Price:399.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Offers a punchy sound and sleek design.</p>
+              <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+            
+            
+            
+               <div class="guitar-product">
+                <img src="Fender Bass.jpg" alt="Fender Acoustic Guitar">
+                <h3>Fender Bass Guitar</h3>
+                <p class="price">Price:399.99</p>
+                <p class="rating">Rating: ★★★★☆</p>
+                <p class="info">Classic sound that fits well in any band.</p>
+                         <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+</div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+</div>
+                      
+  
+        </section>
+    </main>
+
+    <script>
+    const searchForm = document.querySelector('.search-bar');
+    searchForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const query = searchForm.querySelector('input').value.toLowerCase();
+
+        // Simplified keyword matching
+ if (query.includes('guitar')) { 
+  window.location.href = 'guitar.html';
+ } else if (query.includes('keyboard')) {
+ window.location.href = 'keyboard.html';
+} else if (query.includes('drum') || query .includes('drum set')) { 
+   window.location.href = 'drum set.html'; 
+} else if (query.includes('amp') || query.includes('amplifier')) { 
+ window.location.href = 'amplifier.html'; 
+   } else {
+  alert('No matching products found!');
+        }
+    });
+    
+    
+    
+    
+        function toggleMenu() {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('active');
+        }
+        
+        
+ 
+ function buyNow() {
+  window.location.href = "payment.html";
+}
+
+let cart = [];
+
+function addToCart(event) {
+  const productName = event.target.parentNode.parentNode.querySelector('h3').textContent;
+  const productPrice = event.target.parentNode.parentNode.querySelector('.price').textContent;
+  const productImg = event.target.parentNode.parentNode.querySelector('img').src;
+
+  const product = {
+    name: productName,
+   price:productPrice,
+    img: productImg
+  };
+
+  cart.push(product);
+  updateCart();
+}
+
+function updateCart() {
+  const cartContainer = document.getElementById('cart-container');
+  cartContainer.innerHTML = '';
+
+  cart.forEach((product) => {
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+      <img src="${product.img}" alt="${product.name}">
+      <div>
+        <h3>${product.name}</h3>
+       <p>Price: ${product.price}</p>
+      </div>
+    `;
+    cartContainer.appendChild(cartItem);
+  });
+
+  document.getElementById('cart-count').textContent = cart.length;
+  document.getElementById('cart-sidebar').classList.add('show');
+}
+
+document.querySelectorAll('.add-to-cart').forEach((button) => {
+  button.addEventListener('click', addToCart);
+});
+
+document.getElementById('cart-sidebar').addEventListener('click', (event) => {
+  if (event.target === document.getElementById('cart-sidebar')) {
+    document.getElementById('cart-sidebar').classList.remove('show');
+  }
+});       
+        
+        
+    </script>
+</body>
+
+</html>

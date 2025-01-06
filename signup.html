@@ -1,0 +1,168 @@
+ 
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store - Products</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+    <h1>
+        <i class="fas fa-shopping-cart"></i> V&A Music Store
+    </h1>
+</div>
+       <nav>
+
+
+  <div class="navbar">
+
+    <div class="navbar-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a> 
+      <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="signup.html"class="active"><i class="fas fa-user-plus"></i> Sign Up</a>
+    </div>
+    <div class="icon" onclick="toggleMenu()"> 
+      &#9776; 
+    </div>
+  </div>
+</nav>
+    </header>
+    
+<!-- Auth Container with added fields for complete name, address, and contact -->
+<div class="form-wrapper"> 
+  <div class="auth-container">
+
+      <!-- Sign Up Form -->
+      <div class="auth-box" id="sign-up-box">
+          <h2>Sign Up</h2>
+          <form id="sign-up-form">
+              <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Full Name:" required>
+              </div>
+              <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Email:" required>
+              </div>
+              <div class="input-wrapper">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <input type="text" placeholder="Address:" required>
+              </div>
+              <div class="input-wrapper">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" placeholder="Contact Number:" required>
+              </div>
+              <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password:" required>
+              </div>
+              <button type="submit">Sign Up</button>
+          </form>
+          <p>Already have an account? <span id="switch-to-login">Login here</span></p>
+      </div>
+
+      <!-- Login Form -->
+      <div class="auth-box" id="login-box">
+          <h2>Login</h2>
+          <form id="login-form">
+              <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Email:" required>
+              </div>
+              <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password:" required>
+              </div>
+              <button type="submit">Login</button>
+          </form>
+          <p>Don't have an account? <span id="switch-to-sign-up">Sign Up here</span></p>
+      </div>
+
+  </div>
+</div>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () { 
+    const signUpBox = document.getElementById("sign-up-box");
+    const loginBox = document.getElementById("login-box");
+    const switchToLogin = document.getElementById("switch-to-login");
+    const switchToSignUp = document.getElementById("switch-to-sign-up");
+
+    // Default to the Sign Up form being active
+    signUpBox.classList.add("active");
+
+    // Switch to Login form
+    switchToLogin.addEventListener("click", function () {
+        signUpBox.classList.remove("active");
+        loginBox.classList.add("active");
+    });
+
+    // Switch to Sign Up form
+    switchToSignUp.addEventListener("click", function () {
+        loginBox.classList.remove("active");
+        signUpBox.classList.add("active"); 
+    });
+
+    // Handle Sign Up Form Submission
+    document.getElementById("sign-up-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const fullName = document.getElementById("sign-up-full-name").value.trim();
+        const email = document.getElementById("sign-up-email").value.trim();
+        const password = document.getElementById("sign-up-password").value.trim();
+
+        if (fullName && email && password) {
+            alert("✅ Sign-up successful! Please log in.");
+            // Automatically switch to login form
+            signUpBox.classList.remove("active");
+            loginBox.classList.add("active");
+        } else {
+            alert("❌ Please fill out all required fields.");
+        }
+    });
+
+    // Handle Login Form Submission
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById("login-email").value.trim();
+        const password = document.getElementById("login-password").value.trim();
+
+        // Example credentials (for demo purposes)
+        const registeredEmail = "user@example.com";
+        const registeredPassword = "password123";
+
+        if (email === registeredEmail && password === registeredPassword) {
+            alert("✅ Login successful!");
+            // Redirect to the dashboard or homepage
+            window.location.href = "/dashboard.html"; // Change this to your actual page
+        } else {
+            alert("❌ Invalid email or password.");
+        }
+    });
+});
+ 
+    
+    
+    function toggleMenu() {
+  const links = document.querySelector('.navbar-links');
+  links.classList.toggle('active');
+}
+
+
+</script>
+
+
+ 
+</body>
+</html>
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="V&A Music Store - Your One-Stop Music Shop for quality instruments."> <!-- Meta description -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+   <div class="logo">
+    <h1>
+        <i class="fas fa-shopping-cart"></i> V&A Music Store
+    </h1>
+</div>
+
+  <nav>
+  <div class="navbar">
+    <div class="navbar-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a> 
+      <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      <a href="about.html"class="active"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+    </div>
+    <div class="icon" onclick="toggleMenu()"> 
+      &#9776; 
+    </div>
+  </div>
+</nav>
+    </header>
+  
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <br>
+    <p>We are passionate about music and provide high-quality musical instruments and gear to musicians worldwide. Our mission is to support musicians of all levels, from beginners to professionals, by offering a curated selection of top-notch instruments and accessories.
+        <br>
+        <br>
+     <p>Our carefully curated collection includes a wide range of high-quality musical instruments and accessories, from classic acoustic guitars and powerful electric keyboards to cutting-edge recording gear and amplifiers.
+        Every item we offer has been handpicked from trusted brands known for their craftsmanship and innovation,ensuring you only receive gear that meets the highest standards for quality,durability, and perfomans.</p> 
+        <br>  
+        <h2>Our Objectives Are:</h2>
+        <br>
+        <p>To provide instruments and equipment of exceptional quality and durability. </p>
+          <p>To offer products with outstanding value and competitive pricing. </p>
+           <p>To deliver excellent customer service and support the music community.</p>
+           <p>To empower musicians to pursue their dreams.</p>
+
+<br>
+<br>   
+
+<script>
+    function toggleMenu() {
+
+  const links = document.querySelector('.navbar-links');
+
+  links.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

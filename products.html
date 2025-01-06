@@ -1,0 +1,506 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store - Products</title>
+    <link rel="stylesheet" href="style.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+<div class="logo">
+    <h1>
+        <i class="fas fa-shopping-cart"></i> V&A Music Store
+    </h1>
+</div>
+ <nav>
+  <div class="navbar">
+    <div class="navbar-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a> 
+      <a href="products.html"class="active"><i class="fas fa-box"></i> Products</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+    </div>
+    <div class="icon" onclick="toggleMenu()"> 
+      &#9776; 
+    </div>
+  </div>
+</nav>
+    </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+ 
+
+    <section class="products" id="products">
+        <h2>V&A Products</h2>
+  <div class="product-grid">
+    <div class="product-container">
+        <div class="product" onclick="toggleDetails(this)">
+            <img src="Yamaha acoustic.jpg" alt="Yamaha Acoustic Guitar">
+            <h3>Yamaha Acoustic Guitar</h3>
+            <br>
+            <div class="details">
+                <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                <p class="info" style="color: black;">Info: Quality Acoustic Guitar.</p>
+            </div>
+        </div>
+ <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+  
+ <div id="cart-sidebar" class="cart-sidebar">
+  <h2>Cart (<span id="cart-count">0</span>)</h2>
+  <div id="cart-container"></div>
+</div>
+</div>
+    </div>
+
+            
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Fender acoustic.jpg" alt="Fender Acoustic Guitar">
+                <h3>Fender Acoustic Guitar</h3>
+                <br>
+
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★☆☆</p>
+     <p class="info" style="color: black;">Info: Popular Acoustic Model.</p>
+ 
+                </div>
+            </div>
+ 
+  <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+ 
+</div>
+    </div>
+
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Gibson acoustic.jpg" alt="Gibson Acoustic Guitar">
+                <h3>Gibson Acoustic Guitar</h3>
+                <br>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Premium Acoustic Guitar.</p>
+                </div>
+            </div>
+   <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Ibanez electric.jpg" alt="Ibanez Electric Guitar">
+                <h3>Ibanez Electric Guitar</h3>
+                <br>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Versatile Electric Guitar.</p>
+                </div>
+            </div>
+    <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Fender electric.jpg" alt="Fender Electric Guitar">
+                <h3>Fender Electric Guitar</h3>
+                <br>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Classic Electric Model.</p>
+                </div>
+            </div>
+          <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="product-container"> 
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Gibson electric.jpg" alt="Gibson Electric Guitar">
+                <h3>Gibson Electric Guitar</h3>
+                <br>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $299.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★☆☆</p>
+                    <p class="info" style="color: black;">Info: Iconic Electric Guitar.</p>
+                </div>
+            </div>
+ <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Casio Keyboard.jpg" alt="Casio Electric Keyboard">
+                <h3>Casio Electric Keyboard</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Great for Beginners.</p>
+                </div>
+            </div>
+      <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Yamaha keyboard.jpg" alt="Yamaha Electric Keyboard">
+                <h3>Yamaha Electric Keyboard</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Quality Sound.</p>
+                </div>
+            </div>
+       <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+                <div class="product-container">
+                <div class="product" onclick="toggleDetails(this)">
+                <img src="Roland Keyboard.jpg" alt="Roland Electric Keyboard">
+                <h3>Roland Electric Keyboard</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Known for its realistic sounds professional features.</p>
+                </div>
+            </div>
+        <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Bass Guitar.jpg" alt="Yamaha Bass Guitar">
+                <h3>Yamaha Bass Guitar</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Deep Sound.</p>
+                </div>
+            </div>
+            <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+            <div class="product-container">
+             <div class="product" onclick="toggleDetails(this)">
+                <img src="Ibanez Bass.jpg" alt="Yamaha Bass Guitar">
+                <h3>Ibanez Bass Guitar</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Offers a punchy sound and sleek design.</p>
+                </div>
+            </div>
+    <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+               <div class="product-container">
+               <div class="product" onclick="toggleDetails(this)">
+                <img src="Fender Bass.jpg" alt="Fender Bass Guitar">
+                <h3>Fender Bass Guitar</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $399.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Classic sound that fits well in any band.</p>
+                </div>
+            </div>
+      <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+            <div class="product-container">
+            <div class="product" onclick="toggleDetails(this)">
+                <img src="Ludwig Drum .jpg" alt="Ludwig Drum Set">
+                <h3>Ludwig Drum Set</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $499.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Professional Drum Set.</p>
+                </div>
+            </div>
+        <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+                <div class="product-container">
+                <div class="product" onclick="toggleDetails(this)">
+                <img src="Pearl Drum .jpg" alt="Perl Drum Set">
+                <h3>Pearl Drum Set</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $499.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★☆☆</p>
+                    <p class="info" style="color: black;">Info: Known for its quality and versatility,suitable for all styles.</p>
+                </div>
+            </div>
+         <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+                <div class="product-container">
+                 <div class="product" onclick="toggleDetails(this)">
+                <img src="Tama Drum .jpg" alt="Tama Drum Set">
+                <h3>Tama Drum Set</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $499.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Great for live performances with punchy sound.</p>
+                </div>
+            </div>
+          <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+
+                <div class="product-container">
+                 <div class="product" onclick="toggleDetails(this)">
+                <img src="Mahalo.jpg" alt="Mahalo Ukulele">
+                <h3>Mahalo Ukulele</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $99.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Affordable ukulele perfect for beginners.</p>
+                </div>
+            </div>
+           <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+               <div class="product-container">
+               <div class="product" onclick="toggleDetails(this)">
+                <img src="Kala.jpg" alt="Kala Ukulele">
+                <h3>Kala Ukulele</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $99.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Offers bright sound and excellent build quality.</p>
+                </div>
+            </div>
+            <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+
+             <div class="product-container">
+             <div class="product" onclick="toggleDetails(this)">
+                <img src="Linakai.jpg" alt="Linakai Ukulele">
+                <h3>Linakai Ukulele</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $99.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★☆☆</p>
+                    <p class="info" style="color: black;">Info: Geat tone and easy to play for all skill levels.</p>
+                </div>
+            </div>
+             <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+               <div class="product-container">
+               <div class="product" onclick="toggleDetails(this)">
+                <img src="amplifier.jpg" alt="Fender Amplifier">
+                <h3>Fender Amplifier</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $249.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★☆</p>
+                    <p class="info" style="color: black;">Info: Delivers classic tone with modern features.</p>
+                </div>
+            </div>
+              <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+                <div class="product-container">
+                <div class="product" onclick="toggleDetails(this)">
+                <img src="amplifier1.jpg" alt="Orange Amplifier">
+                <h3>Orange Amplifier</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $249.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Known for its distinctive sound and rugged design.</p>
+                </div>
+            </div>
+               <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+            
+
+                <div class="product-container">
+                <div class="product" onclick="toggleDetails(this)">
+                <img src="Yamaha amplifier.jpg" alt="Orange Amplifier">
+                <h3>Yamaha Amplifier</h3>
+                <div class="details">
+                    <p class="price" style="color: #ff9800;">Price: $249.99</p>
+                    <p class="rating" style="color: #DAA520;">Rating: ★★★★★</p>
+                    <p class="info" style="color: black;">Info: Flagship integrated amplifier.</p>
+                </div>
+            </div>
+                <div class="button-container">
+  <button class="buy-now" onclick="buyNow()">Buy Now</button>
+  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+        
+
+    <script>
+    function toggleDetails(product) {
+        const details = product.querySelector('.details');
+        const isVisible = details.style.display === 'block';
+        details.style.display = isVisible ? 'none' : 'block';
+    }
+    
+
+    function toggleMenu() {
+
+
+  const links = document.querySelector('.navbar-links');
+
+  links.classList.toggle('active');
+}
+
+
+
+
+
+
+// Mga JavaScript functions
+ function buyNow() {
+  window.location.href = "payment.html";
+}
+
+let cart = [];
+
+function addToCart(event) {
+  const productName = event.target.parentNode.parentNode.querySelector('h3').textContent;
+  const productPrice = event.target.parentNode.parentNode.querySelector('.price').textContent;
+  const productImg = event.target.parentNode.parentNode.querySelector('img').src;
+
+  const product = {
+    name: productName,
+   price:productPrice,
+    img: productImg
+  };
+
+  cart.push(product);
+  updateCart();
+}
+
+function updateCart() {
+  const cartContainer = document.getElementById('cart-container');
+  cartContainer.innerHTML = '';
+
+  cart.forEach((product) => {
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+      <img src="${product.img}" alt="${product.name}">
+      <div>
+        <h3>${product.name}</h3>
+       <p>Price: ${product.price}</p>
+      </div>
+    `;
+    cartContainer.appendChild(cartItem);
+  });
+
+  document.getElementById('cart-count').textContent = cart.length;
+  document.getElementById('cart-sidebar').classList.add('show');
+}
+
+document.querySelectorAll('.add-to-cart').forEach((button) => {
+  button.addEventListener('click', addToCart);
+});
+
+document.getElementById('cart-sidebar').addEventListener('click', (event) => {
+  if (event.target === document.getElementById('cart-sidebar')) {
+    document.getElementById('cart-sidebar').classList.remove('show');
+  }
+});
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="V&A Music Store - Your One-Stop Music Shop for quality instruments."> <!-- Meta description -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+ <div class="logo">
+    <h1>
+        <i class="fas fa-shopping-cart"></i> V&A Music Store
+    </h1>
+</div>
+
+<nav>
+  <div class="navbar">
+    <div class="navbar-links">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a> 
+      <a href="products.html"><i class="fas fa-box"></i> Products</a>
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+    </div>
+    <div class="icon" onclick="toggleMenu()"> 
+      &#9776; 
+    </div>
+  </div>
+</nav>
+
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Your One-Stop Music Shop</h2>
+        <p>Explore the best instruments and Find Your Perfect Sound.</p>
+        <br>
+        <a href="products.html" class="btn">Shop Now</a>
+        <br>
+        <br>
+
+        <form class="search-bar" method="get">
+        <input type="text" name="query" placeholder="Search for products...">
+        <button type="submit">Search</button>
+    </form>
+
+    </section>
+    
+    <main>
+        <h2>V&A Products</h2>
+    <section class="homepage-products">
+        <a href="guitar.html">
+            <img src="Guitar.avif" alt="Guitar" class="product-link">
+            <h3>Guitar</h3>
+  </a>
+      <a href="keyboard.html">
+    <img src="Yamaha keyboard.jpg" alt="keyboard" class="product-link">
+    <h3>Electric Keyboard</h3>
+</a>
+
+<a href="drum set.html">
+    <img src="mic.jpg" alt="drum set" class="product-link">
+    <h3>Drum Set</h3> 
+</a>
+
+
+<a href="Amplifier.html">
+    <img src="amplifier.jpg" alt="Amplifier" class="product-link">
+    <h3>Amplifier</h3>
+</a>
+
+    </section>
+
+    </main>
+<br>
+<br>
+<br>
+
+    
+    
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h2>V&A Music Store</h2>
+            <br>
+            <p>Your ultimate destination for quality music instruments and accessories.</p>
+        </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@vamusicstore.com</p>
+                <p>Phone: +123-456-7890</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="Instagram.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="Twitter.jpg" alt="Twitter"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 V&A Music Store.  All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+<script>
+    const searchForm = document.querySelector('.search-bar');
+    searchForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const query = searchForm.querySelector('input').value.toLowerCase();
+
+        // Simplified keyword matching
+ if (query.includes('guitar')) { 
+  window.location.href = 'guitar.html';
+ } else if (query.includes('keyboard')) {
+ window.location.href = 'keyboard.html';
+} else if (query.includes('drum') || query .includes('drum set')) { 
+   window.location.href = 'drum set.html'; 
+} else if (query.includes('amp') || query.includes('amplifier')) { 
+ window.location.href = 'amplifier.html'; 
+   } else {
+  alert('No matching products found!');
+        }
+    });
+    
+    
+    
+    
+    function toggleMenu() {
+  const links = document.querySelector('.navbar-links');
+  links.classList.toggle('active');
+}
+</script>
+
+ 
+    
+</body>
+</html>
